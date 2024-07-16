@@ -6,7 +6,8 @@ import icon3 from "../../images/icon/location.svg";
 import icon4 from "../../images/icon/search.svg";
 import icon5 from "../../images/icon/us_flag.png";
 import icon6 from "../../images/icon/arrow_down.svg";
-import logo from "../../images/logo/logo.svg";
+import logo from "./logoManzilTravels.png";
+// import logo from "../../images/logo/logo.svg";
 import MobileMenu from "../MobileMenu/MobileMenu";
 
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
@@ -46,7 +47,7 @@ const Header = (props) => {
     <div>
       <div style={{ position: "absolute", zIndex: 99999 }}>
       <FloatingWhatsApp
-            phoneNumber="+44 7417 534917"
+            phoneNumber="+44 7947 478899"
             accountName="Manzil Travels"
             chatMessage={`Hey there ! I am your travel agent. How May I help you ?`}
             notification
@@ -85,8 +86,8 @@ const Header = (props) => {
           <div className="header__inner ul_li_between">
             <div className="header__logo">
               <Link onClick={ClickHandler} to="/">
-                {/* <img src={logo} alt="" /> */}
-                <h5>Manzil Travel</h5>
+                <img height={100} width={100} src={logo} alt="Manzil Consultancy" />
+                
               </Link>
             </div>
             <div className="main-menu__wrap ul_li navbar navbar-expand-lg">
