@@ -129,7 +129,7 @@ const Header = (props) => {
                           <span>Tourist Visa</span>
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link
                           onClick={ClickHandler}
                           to="/service-single/Residence-Visa"
@@ -160,7 +160,7 @@ const Header = (props) => {
                         >
                           <span>Student Visa</span>
                         </Link>
-                      </li>
+                      </li> */}
                    
                       
                     </ul>
@@ -317,8 +317,8 @@ const Header = (props) => {
             ></div>
             <div className="xb-logo-mobile xb-hide-xl">
               <Link onClick={ClickHandler} to="/" rel="home">
-                {/* <img src={logo} alt="" /> */}
-                <h5>Manzil Travel</h5>
+                <img src={logo} alt="Manzil Consultancy" />
+                {/* <h5>Manzil Travel</h5> */}
               </Link>
             </div>
             <div className="xb-header-mobile-search xb-hide-xl">

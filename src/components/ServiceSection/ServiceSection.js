@@ -44,7 +44,8 @@ const ServiceSection = (props) => {
                         <h3 className="xb-item--title mb-20">
                           <Link
                             onClick={ClickHandler}
-                            to={`/service-single/${service.slug}`}
+                            // to={`/service-single/${service.slug}`}
+                            to='#'
                           >
                             {service.title}
                           </Link>

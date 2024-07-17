@@ -14,8 +14,8 @@ const FaqPage = (props) => {
             <Header />
             <PageTitle pageTitle={'FAQ’s'} pagesub={'FAQ’s'} />
             <FaqSection/>
-            <NewsLatter />
-            <ContactSection />
+            {/* <NewsLatter />
+            <ContactSection /> */}
             <Footer />
             <Scrollbar />
         </Fragment>

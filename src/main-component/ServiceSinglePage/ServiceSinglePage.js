@@ -8,10 +8,13 @@ import ContactSection from '../../components/ContactSection';
 import Footer from '../../components/footer/Footer';
 import Services from '../../api/service'
 import ServiceSidebar from './sidebar';
-import eImg1 from '../../images/visa/img_01.jpg'
-import eImg from '../../images/visa/img_02.jpg'
-import eImg2 from '../../images/icon/star.svg'
+import eImg1 from '../../images/visa/img_01.jpg';
+import eImg from '../../images/visa/img_02.jpg';
+import eImg2 from '../../images/icon/star.svg';
+import tourist from '../../images/manzilTravel/Airport.jpg'
+import mainTour from '../../images/manzilTravel/main-tour.jpg'
 
+import DestinatioSection from '../../components/travel-agency-components/DestinatioSection/DestinatioSection';
 const ServiceSinglePage = (props) => {
     const { slug } = useParams()
 
@@ -34,7 +37,7 @@ const ServiceSinglePage = (props) => {
                                 <p>A {ServiceDetails.title} stands as a gateway to building a new life in a foreign land. It's more than just a permit; it's an opportunity to immerse yourself in a new culture, embrace fresh opportunities, and become an integral part of a different community</p>
                                 <p>In the realm of global communication, a strong command of the English language is a bridge that connects cultures, , and aspirations. The International English.</p>
                                 <div className="single-img mt-35 mb-70">
-                                    <img src={eImg1} alt="" />
+                                    <img src={mainTour} alt="" />
                                 </div>
                                 <h3>How e.visa work</h3>
                                 <ul className="about-list ul_li list-unstyled">
@@ -88,7 +91,8 @@ const ServiceSinglePage = (props) => {
                                 <p>A {ServiceDetails.title} isn't merely a document; it's a key to unlocking a world of opportunities and experiences. With its myriad benefits, a residence visa opens, Here's a closer look at the remarkable advantages that a residence visa brings:</p>
                                 <div className="row align-items-center mt-10">
                                     <div className="col-lg-6 mt-30">
-                                        <img src={eImg} alt="" />
+                                        {/* <img src={eImg} alt="" /> */}
+                                        <img src={tourist} alt="" />
                                     </div>
                                     <div className="col-lg-6 mt-30">
                                         <ul className="single-content-list list-unstyled pl-25">
@@ -107,8 +111,11 @@ const ServiceSinglePage = (props) => {
             </section>
 
 
-            <NewsLatter />
-            <ContactSection />
+            {/* <NewsLatter />
+            <ContactSection /> */}
+            
+            {/* <DestinatioSection /> */}
+            
             <Footer />
             <Scrollbar />
         </Fragment>

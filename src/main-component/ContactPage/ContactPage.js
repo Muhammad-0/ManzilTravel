@@ -6,7 +6,7 @@ import Scrollbar from '../../components/scrollbar/scrollbar'
 import ContactSection from '../../components/ContactSection';
 import NewsLatter from '../../components/NewsLatter/NewsLatter';
 import Footer from '../../components/footer/Footer';
-import cimg1 from '../../images/country/img_01.png'
+import cimg1 from '../../images/country/flg_04.png'
 import cimg2 from '../../images/country/img_02.png'
 import cimg3 from '../../images/country/img_03.png'
 
@@ -31,36 +31,36 @@ const ContactPage = (props) => {
                                 </div>
                                 <h3 className="xb-item--title"><Link onClick={ClickHandler} to="/country">(01) Visit Us Daily</Link></h3>
                                 <div className="xb-item--content">
-                                    4140 Parker Rd. Allentown, <br/> Canada 31134
+                                66 Birchfield Road, Northampton, <br/>  United Kingdom
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 mt-30">
                             <div className="xb-contact-info text-center">
                                 <div className="xb-item--flag">
-                                    <img src={cimg2} alt=""/>
+                                    <img src={cimg1} alt=""/>
                                 </div>
                                 <h3 className="xb-item--title"><Link onClick={ClickHandler} to="/country">(02) Visit Uk Daily</Link></h3>
                                 <div className="xb-item--content">
-                                    8502 Preston Rd. Australia, <br/> Maine 98380
+                                66 Birchfield Road, Northampton, <br/>  United Kingdom 
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 mt-30">
                             <div className="xb-contact-info text-center">
                                 <div className="xb-item--flag">
-                                    <img src={cimg3} alt=""/>
+                                    <img src={cimg1} alt=""/>
                                 </div>
                                 <h3 className="xb-item--title"><Link onClick={ClickHandler} to="/country">(01) Visit Gr Daily</Link></h3>
                                 <div className="xb-item--content">
-                                    8502 Preston Rd. Greece, <br/> Maine 85380
+                                66 Birchfield Road, Northampton,  <br/>  United Kingdom
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <NewsLatter />
+            {/* <NewsLatter /> */}
             <ContactSection />
             <Footer />
             <Scrollbar />

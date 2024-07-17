@@ -5,6 +5,7 @@ import sicon from '../../images/icon/arrow_up.svg'
 import sicon2 from '../../images/icon/pdf.svg'
 import sicon3 from '../../images/icon/b_icon.png'
 import Bg from '../../images/bg/b_bg.jpg'
+import logo from "../../images/manzilTravel/logoManzilTravels.png";
 
 
 const ServiceSidebar = (props) => {
@@ -20,13 +21,15 @@ const ServiceSidebar = (props) => {
                     {Services.slice(0, 8).map((service, Pitem) => (
                         <li key={Pitem}>
                             {service.title ?
-                                <Link onClick={ClickHandler} to={`/service-single/${service.slug}`}>{service.title}<span><img src={sicon} alt="" /></span></Link>
+                                // <Link onClick={ClickHandler} to={`/service-single/${service.slug}`}>
+                                <Link onClick={ClickHandler} to='#'>
+                                    {service.title}<span><img src={sicon} alt="" /></span></Link>
                                 : ''}
                         </li>
                     ))}
                 </ul>
             </div>
-            <div className="widget">
+            {/* <div className="widget">
                 <h3>Downloads</h3>
                 <ul className="widget-download ul_li_between list-unstyled">
                     <li>
@@ -60,9 +63,9 @@ const ServiceSidebar = (props) => {
                         </Link>
                     </li>
                 </ul>
-            </div>
+            </div> */}
             <div className="widget widget-banner text-center bg_img" style={{ backgroundImage: `url(${Bg})` }}>
-                <img className="mb-40" src={sicon3} alt="" />
+                <img className="mb-40" src={logo} alt="" />
                 <h4>Assured Approval – <br /> Guaranteed</h4>
                 <Link onClick={ClickHandler} className="thm-btn" to="/contact">Get in Touch</Link>
             </div>

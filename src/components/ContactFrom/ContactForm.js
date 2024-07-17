@@ -57,7 +57,7 @@ const ContactForm = (props) => {
                             className="form-control"
                             onBlur={(e) => changeHandler(e)}
                             onChange={(e) => changeHandler(e)}
-                            placeholder="Goladria Gomez" />
+                            placeholder="John Morris" />
                         {validator.message('name', forms.name, 'required|alpha_space')}
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const ContactForm = (props) => {
                             className="form-control"
                             onBlur={(e) => changeHandler(e)}
                             onChange={(e) => changeHandler(e)}
-                            placeholder="e.visa@services.com" />
+                            placeholder="info@manzilconsultancy.com" />
                         {validator.message('email', forms.email, 'required|email')}
                     </div>
                 </div>
